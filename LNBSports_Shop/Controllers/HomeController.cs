@@ -28,7 +28,7 @@ namespace LNBSports_Shop.Controllers
             return View();
         }
 
-        public ActionResult Registration()
+        public ActionResult Registrater()
         {
             return View();
         }
