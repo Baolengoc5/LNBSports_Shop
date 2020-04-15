@@ -30,11 +30,55 @@
                     <li class="nav-item">
                         @Html.ActionLink("Trang chủ", "Index", "Home", new { @class = "nav-link" })
                     </li>
-                    <li class="nav-item">
-                        @Html.ActionLink("Thới thiệu", "About", "Home", new { @class = "nav-link" })
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Đồ tập nam
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Áo tập nam</a>
+                            <a class="dropdown-item" href="#">Áo khoác nam</a>
+                            <a class="dropdown-item" href="#">Quần tập nam</a>
+                            <a class="dropdown-item" href="#">Đồ bộ tập nam</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        @Html.ActionLink("Liên hệ", "Contact", "Home", new { @class = "nav-link" })
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Đồ tập nữ
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Quần tập nữ</a>
+                            <a class="dropdown-item" href="#">Áo khoác nữ</a>
+                            <a class="dropdown-item" href="#">Quần tập nữ</a>
+                            <a class="dropdown-item" href="#">Đồ bộ tập nữ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Đồ thể thao
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Đồ thể thao nam</a>
+                            <a class="dropdown-item" href="#">Đồ thể thao nữ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Phụ kiện
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Tập gym</a>
+                            <a class="dropdown-item" href="#">Tập yoga</a>
+                            <a class="dropdown-item" href="#">Túi thể thao</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Thông tin-Liên hệ
+                        </a>
+                        <div class="dropdown-menu">
+                            @Html.ActionLink("Thới thiệu", "About", "Home", new { @class = "dropdown-item" })
+                            @Html.ActionLink("Liên hệ", "Contact", "Home", new { @class = "dropdown-item" })
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
