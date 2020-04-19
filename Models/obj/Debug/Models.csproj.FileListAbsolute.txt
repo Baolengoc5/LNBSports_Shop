@@ -1,0 +1,12 @@
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\bin\Debug\Models.dll.config
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\bin\Debug\Models.dll
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\bin\Debug\Models.pdb
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\bin\Debug\EntityFramework.dll
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\bin\Debug\EntityFramework.xml
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\obj\Debug\Models.csproj.CopyComplete
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\obj\Debug\Models.dll
+D:\Baocaototnghiep\Source\LNBSports_Shop\Models\obj\Debug\Models.pdb

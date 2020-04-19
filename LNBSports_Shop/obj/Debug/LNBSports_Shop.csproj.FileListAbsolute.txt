@@ -156,3 +156,10 @@ D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\obj\Debug\LNBSports_Shop
 D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\obj\Debug\LNBSports_Shop.csproj.CopyComplete
 D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\obj\Debug\LNBSports_Shop.dll
 D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\obj\Debug\LNBSports_Shop.pdb
+D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\bin\Models.dll
+D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\bin\EntityFramework.dll
+D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\bin\Models.pdb
+D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\bin\Models.dll.config
+D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\bin\EntityFramework.xml
+D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\bin\EntityFramework.SqlServer.dll
+D:\Baocaototnghiep\Source\LNBSports_Shop\LNBSports_Shop\bin\EntityFramework.SqlServer.xml

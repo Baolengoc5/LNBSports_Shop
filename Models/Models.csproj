@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,15 +53,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountModels.cs" />
+    <Compile Include="Frameworks\About.cs" />
+    <Compile Include="Frameworks\Admin.cs" />
+    <Compile Include="Frameworks\Category.cs" />
+    <Compile Include="Frameworks\Contact.cs" />
+    <Compile Include="Frameworks\Content.cs" />
+    <Compile Include="Frameworks\ContentTag.cs" />
+    <Compile Include="Frameworks\Credential.cs" />
+    <Compile Include="Frameworks\Feedback.cs" />
+    <Compile Include="Frameworks\Footer.cs" />
+    <Compile Include="Frameworks\Language.cs" />
+    <Compile Include="Frameworks\LNBSports_ShopDbcontext.cs" />
+    <Compile Include="Frameworks\Menu.cs" />
+    <Compile Include="Frameworks\MenuType.cs" />
+    <Compile Include="Frameworks\Order.cs" />
+    <Compile Include="Frameworks\OrderDetail.cs" />
+    <Compile Include="Frameworks\Product.cs" />
+    <Compile Include="Frameworks\ProductCategory.cs" />
+    <Compile Include="Frameworks\Role.cs" />
+    <Compile Include="Frameworks\Slide.cs" />
+    <Compile Include="Frameworks\SystemConfig.cs" />
+    <Compile Include="Frameworks\Tag.cs" />
+    <Compile Include="Frameworks\User.cs" />
+    <Compile Include="Frameworks\UserGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Framework\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
