@@ -42,43 +42,27 @@
                                     {
                                         @Html.AntiForgeryToken()
 
-                                        <div class="form-group">
-                                            @Html.TextBoxFor(model => model.UserName, new { @type = "text", @class = "form-control form-control-user", @placeholder = "Tên đăng nhập" })
-                                        </div>
-                                        <div class="form-group">
-                                            @Html.TextBoxFor(model => model.Password, new { @type = "password", @class = "form-control form-control-user", @placeholder = "Mật khẩu" })
-
-                                        </div>
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.UserName, new { @type = "text", @class = "form-control form-control-user", @placeholder = "Tên đăng nhập", @required = "required"})
+                                </div>
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.Password, new { @type = "password", @class = "form-control form-control-user", @placeholder = "Mật khẩu", @required = "required" })
+                                </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 @Html.CheckBoxFor(model => model.RememberMe, new { @type = "checkbox", @class = "custom-control-input", @id = "customCheck" })
                                                 <label class="custom-control-label" for="customCheck">Nhớ tài khoản</label>
                                             </div>
                                         </div>
-                                        @Html.ValidationSummary(true, null, new {@class = "alert alert-danger"})
-                                        <button type="submit" class = "btn btn-primary btn-user btn-block">Đăng nhập</button>
+                                        @Html.ValidationSummary(true, null, new { @class = "alert alert-danger" })
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">Đăng nhập</button>
                                     }
-                                    @*<form class="user">
-            <div class="form-group">
-                <input type="text" class="form-control form-control-user"  placeholder="Tên đăng nhập">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control form-control-user" placeholder="Mật khẩu">
-            </div>
-            <div class="form-group">
-                <div class="custom-control custom-checkbox small">
-                    <input type="checkbox" class="custom-control-input" id="customCheck">
-                    <label class="custom-control-label" for="customCheck">Nhớ tài khoản</label>
-                </div>
-            </div>
-            @Html.ActionLink("Đăng nhập", "Index", "Home", new { @class = "btn btn-primary btn-user btn-block" })
-        </form>*@
                                     <hr>
                                     <div class="text-center">
                                         <a class="small" href="forgot-password.html">Quên mật khẩu?</a>
                                     </div>
                                     <div class="text-center">
-                                        @Html.ActionLink("Tạo tài khoản", "Registrater", "Home", new { @class = "small" })
+                                        @Html.ActionLink("Tạo tài khoản", "Registrater", "Home", null, new { @class = "small" })
                                     </div>
                                 </div>
                             </div>
