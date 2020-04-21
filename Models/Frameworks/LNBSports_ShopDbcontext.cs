@@ -8,7 +8,7 @@ namespace Models.Frameworks
     public partial class LNBSports_ShopDbcontext : DbContext
     {
         public LNBSports_ShopDbcontext()
-            : base("name=LNBSports_ShopDbcontext1")
+            : base("name=LNBSports_ShopDbcontext2")
         {
         }
 

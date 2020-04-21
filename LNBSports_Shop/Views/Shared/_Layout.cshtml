@@ -14,11 +14,10 @@
 
     <!-- Custom styles for this template -->
     <link href="/Assets/css/shop-homepage.css" rel="stylesheet">
-
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             @Html.ActionLink("LNBsports_Shop", "Index", "Home", null, new { @class = "navbar-brand" })
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,66 +27,66 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item">
-                        @Html.ActionLink("Trang chủ", "Index", "Home", null, new { @class = "nav-link" })
+                        @Html.ActionLink("Trang chủ", "Index", "Home", null, new { @class = "nav-link text-light" })
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbardrop" data-toggle="dropdown">
                             Đồ tập nam
                         </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Áo tập nam</a>
-                            <a class="dropdown-item" href="#">Áo khoác nam</a>
-                            <a class="dropdown-item" href="#">Quần tập nam</a>
-                            <a class="dropdown-item" href="#">Đồ bộ tập nam</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light" href="#">Áo tập nam</a>
+                            <a class="dropdown-item text-light" href="#">Áo khoác nam</a>
+                            <a class="dropdown-item text-light" href="#">Quần tập nam</a>
+                            <a class="dropdown-item text-light" href="#">Đồ bộ tập nam</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbardrop" data-toggle="dropdown">
                             Đồ tập nữ
                         </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Quần tập nữ</a>
-                            <a class="dropdown-item" href="#">Áo khoác nữ</a>
-                            <a class="dropdown-item" href="#">Quần tập nữ</a>
-                            <a class="dropdown-item" href="#">Đồ bộ tập nữ</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light" href="#">Quần tập nữ</a>
+                            <a class="dropdown-item text-light" href="#">Áo khoác nữ</a>
+                            <a class="dropdown-item text-light" href="#">Quần tập nữ</a>
+                            <a class="dropdown-item text-light" href="#">Đồ bộ tập nữ</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbardrop" data-toggle="dropdown">
                             Đồ thể thao
                         </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Đồ thể thao nam</a>
-                            <a class="dropdown-item" href="#">Đồ thể thao nữ</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light" href="#">Đồ thể thao nam</a>
+                            <a class="dropdown-item text-light" href="#">Đồ thể thao nữ</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbardrop" data-toggle="dropdown">
                             Phụ kiện
                         </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Tập gym</a>
-                            <a class="dropdown-item" href="#">Tập yoga</a>
-                            <a class="dropdown-item" href="#">Túi thể thao</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light" href="#">Tập gym</a>
+                            <a class="dropdown-item text-light" href="#">Tập yoga</a>
+                            <a class="dropdown-item text-light" href="#">Túi thể thao</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbardrop" data-toggle="dropdown">
                             Thông tin-Liên hệ
                         </a>
-                        <div class="dropdown-menu">
-                            @Html.ActionLink("Thới thiệu", "About", "Home", null, new { @class = "dropdown-item" })
-                            @Html.ActionLink("Liên hệ", "Contact", "Home", null, new { @class = "dropdown-item" })
+                        <div class="dropdown-menu bg-dark">
+                            @Html.ActionLink("Thới thiệu", "About", "Home", null, new { @class = "dropdown-item text-light" })
+                            @Html.ActionLink("Liên hệ", "Contact", "Home", null, new { @class = "dropdown-item text-light" })
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                             <img src="https://img.icons8.com/material-sharp/24/000000/settings.png" />
                         </a>
-                        <div class="dropdown-menu">
-                            @Html.ActionLink("Đăng nhập", "Login", "Login", null, new { @class = "dropdown-item" })
-                            @Html.ActionLink("Đăng ký", "registrater", "Home", null, new { @class = "dropdown-item" })
-                            <a class="dropdown-item href="#">Đăng xuất</a>
+                        <div class="dropdown-menu bg-dark">
+                            @Html.ActionLink("Đăng nhập", "Login", "Login", null, new { @class = "dropdown-item text-light" })
+                            @Html.ActionLink("Đăng ký", "registrater", "Home", null, new { @class = "dropdown-item text-light" })
+                            @Html.ActionLink("Đăng xuất", "Logout", "Login", null, new { @class = "dropdown-item text-light" })
                         </div>
                     </li>
                 </ul>

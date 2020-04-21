@@ -15,14 +15,14 @@ namespace Models
         {
             context = new LNBSports_ShopDbcontext();
         }
-        public int Login(string username, string password)
+        public bool Login(string username, string password)
         {
             object[] sqlParams =
             {
                 new SqlParameter("@UserName",username),
                 new SqlParameter("@Password", password)
         };
-            var res = context.Database.SqlQuery<int>("Sp_User_Login @UserName,@Password",sqlParams).SingleOrDefault();
+            var res = context.Database.SqlQuery<bool>("Sp_User_Login @UserName,@Password",sqlParams).SingleOrDefault();
             return res;
         }
     }

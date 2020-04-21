@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using LNBSports_Shop.Code.Session;
+using System.Web.Security;
 using LNBSports_Shop.Models;
 using Models;
 
@@ -23,21 +23,10 @@ namespace LNBSports_Shop.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModels model)
         {
-            var result = new AccountModels().Login(model.UserName, model.Password);
-            if (result == 1 && ModelState.IsValid)
+            
+            if (Membership.ValidateUser(model.UserName,model.Password) && ModelState.IsValid)
             {
-                SessionHelper.SetSession(new UserSession()
-                {
-                    UserName = model.UserName
-                });
-                return RedirectToAction("Index", "Home");
-            }
-            else if (result == 2 && ModelState.IsValid)
-            {
-                SessionHelper.SetSession(new UserSession()
-                {
-                    UserName = model.UserName
-                });
+                FormsAuthentication.SetAuthCookie(model.UserName,model.RememberMe);
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -45,6 +34,12 @@ namespace LNBSports_Shop.Controllers
                 ModelState.AddModelError("", "Tên đăng nhập hoặc mật khẩu không đúng.");
             }
             return View(model);
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login","Login");
         }
     }
 }
