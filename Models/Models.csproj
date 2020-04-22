@@ -55,7 +55,6 @@
   <ItemGroup>
     <Compile Include="AccountModels.cs" />
     <Compile Include="Frameworks\About.cs" />
-    <Compile Include="Frameworks\Admin.cs" />
     <Compile Include="Frameworks\Category.cs" />
     <Compile Include="Frameworks\Contact.cs" />
     <Compile Include="Frameworks\Content.cs" />

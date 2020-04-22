@@ -13,7 +13,6 @@ namespace Models.Frameworks
         }
 
         public virtual DbSet<About> Abouts { get; set; }
-        public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Content> Contents { get; set; }
@@ -52,14 +51,6 @@ namespace Models.Frameworks
             modelBuilder.Entity<About>()
                 .Property(e => e.MetaDescriptions)
                 .IsFixedLength();
-
-            modelBuilder.Entity<Admin>()
-                .Property(e => e.Admin1)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Admin>()
-                .Property(e => e.PasswordAd)
-                .IsUnicode(false);
 
             modelBuilder.Entity<Category>()
                 .Property(e => e.MetaTitle)

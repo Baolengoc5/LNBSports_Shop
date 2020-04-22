@@ -5,9 +5,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 
-namespace LNBSports_Shop.Code.Login
+namespace LNBSports_Shop.Code.CMP
 {
-    public class CustomMembershipProvider : MembershipProvider
+    public class CMPforUser : MembershipProvider
     {
         public override bool EnablePasswordRetrieval => throw new NotImplementedException();
 
@@ -108,7 +108,7 @@ namespace LNBSports_Shop.Code.Login
 
         public override bool ValidateUser(string username, string password)
         {
-            return new AccountModels().Login(username,password);
+            return new AccountModels().Login(username, password);
         }
     }
 }
