@@ -27,7 +27,7 @@ namespace LNBSports_Shop.Controllers
             if (Membership.ValidateUser(model.UserName,model.Password) && ModelState.IsValid)
             {
                 FormsAuthentication.SetAuthCookie(model.UserName,model.RememberMe);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home", new { area = "Admin" });
             }
             else
             {
@@ -39,7 +39,7 @@ namespace LNBSports_Shop.Controllers
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
-            return RedirectToAction("Login","Login");
+            return RedirectToAction("Login","Login",new { area = "" });
         }
     }
 }

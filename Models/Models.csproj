@@ -53,7 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountModels.cs" />
+    <Compile Include="AccountModel.cs" />
+    <Compile Include="CategoryModel.cs" />
     <Compile Include="Frameworks\About.cs" />
     <Compile Include="Frameworks\Category.cs" />
     <Compile Include="Frameworks\Contact.cs" />

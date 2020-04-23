@@ -108,7 +108,7 @@ namespace LNBSports_Shop.Code.CMP
 
         public override bool ValidateUser(string username, string password)
         {
-            return new AccountModels().Login(username, password);
+            return new AccountModel().Login(username, password);
         }
     }
 }

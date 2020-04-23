@@ -1,17 +1,17 @@
-﻿using System;
+﻿using Models.Frameworks;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Models.Frameworks;
-using System.Data.SqlClient;
 
 namespace Models
 {
-    public class AccountModels
+    public class AccountModel
     {
         private LNBSports_ShopDbcontext context = null;
-        public AccountModels()
+        public AccountModel()
         {
             context = new LNBSports_ShopDbcontext();
         }
@@ -22,7 +22,7 @@ namespace Models
                 new SqlParameter("@UserName",username),
                 new SqlParameter("@Password", password)
         };
-            var res = context.Database.SqlQuery<bool>("Sp_User_Login @UserName,@Password",sqlParams).SingleOrDefault();
+            var res = context.Database.SqlQuery<bool>("Sp_User_Login @UserName,@Password", sqlParams).SingleOrDefault();
             return res;
         }
     }
