@@ -1,4 +1,5 @@
 ﻿using Models;
+using Models.Frameworks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,13 +32,28 @@ namespace LNBSports_Shop.Areas.Admin.Controllers
 
         // POST: Admin/Category/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Category collection)
         {
             try
             {
                 // TODO: Add insert logic here
+                if (ModelState.IsValid)
+                {
+                    var model = new CategoryModel();
+                    int res = model.Create(collection.Name, collection.MetaTitle, collection.ParentID, collection.DisplayOrder,
+                        collection.SeoTitle, collection.CreatedBy,collection.MetaKeywords, collection.MetaDescriptions,
+                        collection.Status, collection.ShowOnHome, collection.Language);
+                    if (res > 0)
+                    {
+                        return RedirectToAction("Index");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("","Tạo không thành công !");
+                    }
+                }
 
-                return RedirectToAction("Index");
+                return View(collection);
             }
             catch
             {
